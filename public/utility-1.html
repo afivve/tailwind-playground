@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tailwind CSS</title>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- <style type="text/tailwindcss">
+        * {
+            border: 1px solid red;
+        }
+    </style> -->
+
+</head>
+<body>
+
+    <h1 class="text-6xl font-bold text-center my-10">Mari Belajar Tailwind CSS</h1>
+
+    <section class="mb-10 bg-indigo-200">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="m-10 bg-red-300">Margin</div>
+        <div class="p-8 bg-blue-300">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-yellow-200">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-32 h-32 bg-green-500">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+        <h2 class="mb-2 text-4xl font-bold">Belajar Mengenal Typography pada TailwindCSS</h2>
+        <div class="mb-4 text-gray-500">By <a href="#" class="text-gray-700 font-semibold">Afifudin</a>, 1 Januari 2024</div>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni sint <a href="#" class="underline font-semibold">animi</a> totam iusto quaerat, cupiditate voluptatibus doloremque eius sunt doloribus voluptate atque minus, esse natus, laudantium vero ab optio labore!</p>
+        <blockquote class="mb-4 italic font-thin text-xl">
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae enim vel rerum nam incidunt laborum voluptas praesentium, ab inventore iste possimus voluptatum optio itaque hic, obcaecati fuga alias dicta necessitatibus officiis soluta atque quaerat ratione? Odit vitae maiores, sapiente fuga laudantium dignissimos in blanditiis consequuntur quibusdam? Adipisci, sint delectus." 
+        </blockquote>
+        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ea repellat deleniti totam architecto ad hic, nisi obcaecati velit mollitia.</p>
+    </section>
+
+</body>
+</html>
